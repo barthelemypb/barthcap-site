@@ -24,6 +24,7 @@ Do not drag files into the Cloudflare dashboard.
 - Case study figures are client results from case studies Aaron wrote. Label them that way.
 - No em dashes or en dashes anywhere in the copy.
 - No invented dates, metrics or outcomes.
+- Barth Reach is a Barth Capital practice. It gets its own "Also from Barth Capital" block, never a spot among the engagements.
 
 ## Brand
 
