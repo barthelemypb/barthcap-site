@@ -44,6 +44,12 @@
       "logo": { "@type": "ImageObject", "url": "https://barthcap.io/img/dog.png" },
       "founder": { "@id": "https://barthcap.io/#aaron" },
       "sameAs": ["https://www.linkedin.com/company/barth-cap"],
+      "subOrganization": {
+        "@type": "Organization",
+        "@id": "https://barthreach.com/#organization",
+        "name": "Barth Reach",
+        "url": "https://barthreach.com/"
+      },
       "knowsAbout": ["Product marketing", "Web3", "Go-to-market strategy", "Brand messaging", "Sales enablement", "Co-marketing", "DeFi security"]
     },
     {
@@ -189,6 +195,10 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 @media (min-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media (min-width:980px){.grid.g4{grid-template-columns:repeat(4,1fr)}.grid.g3{grid-template-columns:repeat(3,1fr)}}
 .card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg)}
+a.card{text-decoration:none;transition:border-color .15s,transform .15s}
+a.card:hover{border-color:#3a3f49}
+a.card:hover .t{color:#fff}
+a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);font-size:13px}
 .card .thumb{aspect-ratio:16/10;overflow:hidden;background:#15171b;border-bottom:1px solid var(--line)}
 .card .thumb img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .card .body{padding:14px 16px 16px;display:grid;gap:8px}
@@ -219,6 +229,16 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 .earlier{display:grid;gap:18px;border-top:1px solid var(--line);padding-top:40px}
 @media (min-width:860px){.earlier{grid-template-columns:260px 1fr;gap:56px}}
 .earlier img{height:64px;width:auto}
+
+/* Barth Reach */
+.family{padding:72px 0}
+.family-card{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:center;margin-top:18px;padding:22px 24px;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-decoration:none;transition:border-color .15s}
+.family-card:hover{border-color:#3a3f49}
+.family-card img{width:56px;height:56px;object-fit:contain}
+.family-name{font-weight:600;font-size:18px}
+.family-desc{color:var(--muted);font-size:15px;margin-top:2px}
+.family-go{grid-column:1/-1}
+@media (min-width:760px){.family-card{grid-template-columns:56px 1fr auto}.family-go{grid-column:auto}}
 
 /* Contact */
 .contact{text-align:left}
@@ -367,22 +387,22 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
       <div class="pubs">
         <div class="pubs-head"><span class="mono">Case studies I wrote</span><span class="mono">Figures are client results</span></div>
         <div class="grid">
-          <div class="card">
+          <a class="card" href="https://x.com/ask_aartoo/status/2024511672132784322" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-aartoo-turbo.webp" alt="Aartoo and Turbo case study cover" loading="lazy" width="800" height="545"></div>
             <div class="body">
               <span class="tag"><i>Case study</i> Aartoo × Turbo</span>
               <p class="t">How Turbo increased engagement intensity by 43% without increasing noise</p>
               <div class="stat"><b>43%</b><span>increase in meaningful engagement for Turbo</span></div>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="https://x.com/ask_aartoo/status/2021672388682035238" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-aartoo-coineasy.webp" alt="Aartoo and CoinEasy case study cover" loading="lazy" width="800" height="578"></div>
             <div class="body">
               <span class="tag"><i>Case study</i> Aartoo × CoinEasy</span>
               <p class="t">How CoinEasy runs a multi-client Web3 community agency on Aartoo</p>
               <div class="stat"><b>30 to 40%</b><span>reduction in manual moderation time for CoinEasy</span></div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </article>
@@ -396,6 +416,7 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Fuzzland</dd>
+          <dt>Period</dt><dd>2024 to 2025</dd>
           <dt>Product</dt><dd>Blaz+ suite</dd>
           <dt>Category</dt><dd>On-chain security</dd>
         </dl>
@@ -417,20 +438,20 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
       <div class="pubs">
         <div class="pubs-head"><span class="mono">Case studies I wrote</span><span class="mono">Figures are client results</span></div>
         <div class="grid">
-          <div class="card">
+          <a class="card" href="https://web.archive.org/web/20241204093327/https://fuzz.land/how-fuzzland-used-100-to-save-65-million2-43" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-fuzzland-65m.webp" alt="Fuzzland case study cover: How Fuzzland Used $100 to Save $6.5 Million" loading="lazy" width="800" height="490"></div>
             <div class="body">
               <span class="tag"><i>Case study</i> Fuzzland</span>
               <p class="t">How Fuzzland used $100 to save $6.5 million</p>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="https://web.archive.org/web/20241204093837/https://fuzz.land/the-risk-of-contract-upgrades-how-fuzzland-saved-28-million-from-hackers2-73" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-fuzzland-28m.webp" alt="Fuzzland case study cover: How Fuzzland Saved $2.8 Million from hackers" loading="lazy" width="800" height="490"></div>
             <div class="body">
               <span class="tag"><i>Case study</i> Fuzzland</span>
               <p class="t">How Fuzzland saved $2.8 million from hackers</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </article>
@@ -444,6 +465,7 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Redefine</dd>
+          <dt>Period</dt><dd>2023</dd>
           <dt>Category</dt><dd>DeFi risk management</dd>
         </dl>
       </div>
@@ -464,20 +486,20 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
       <div class="pubs">
         <div class="pubs-head"><span class="mono">Case studies, posts and events</span></div>
         <div class="grid g3">
-          <div class="card">
+          <a class="card" href="https://web.archive.org/web/20231004001255/https://redefine.net/media/swissborg-case-study/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-redefine-swissborg.webp" alt="SwissBorg and Redefine case study" loading="lazy" width="800" height="711"></div>
             <div class="body">
               <span class="tag"><i>Case study</i> Jul 2023</span>
               <p class="t">SwissBorg streamlines DeFi trading with Redefine's risk management solution</p>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="https://web.archive.org/web/20230626134048/https://redefine.net/media/safe-announcement/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-redefine-safe.webp" alt="Redefine and Safe partnership case study" loading="lazy" width="800" height="728"></div>
             <div class="body">
               <span class="tag"><i>Case study</i> Jun 2023</span>
               <p class="t">Redefine partners with Safe for treasury deployment protection</p>
             </div>
-          </div>
+          </a>
           <div class="card">
             <div class="thumb"><img src="/img/co-redefine-ama.webp" alt="Live AMA with Aaron Leibowitz and speakers from Safe, Kleros and Redefine" loading="lazy" width="800" height="484"></div>
             <div class="body">
@@ -485,20 +507,20 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
               <p class="t">Live AMA with Safe and Kleros</p>
             </div>
           </div>
-          <div class="card">
+          <a class="card" href="https://web.archive.org/web/20250326040335/https://redefine.net/media/Reentrancy%20Attack%20With%20Redefine/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/blog-redefine-reentrancy.webp" alt="Navigating the Reentrancy Attack With Redefine blog post" loading="lazy" width="800" height="560"></div>
             <div class="body">
               <span class="tag"><i>Blog</i> Aug 2023</span>
               <p class="t">Navigating the reentrancy attack with Redefine</p>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="https://web.archive.org/web/20250326040341/https://redefine.net/media/ledger-exploit/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/blog-redefine-ledger.webp" alt="Ledger Connect Kit exploit analysis blog post" loading="lazy" width="800" height="603"></div>
             <div class="body">
               <span class="tag"><i>Blog</i> Dec 2023</span>
               <p class="t">The Ledger Connect Kit exploit and the role of Redefine in user protection</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </article>
@@ -532,22 +554,22 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
         </ul>
       </div>
       <div class="grid g4">
-        <div class="card">
+        <a class="card" href="https://www.certik.com/resources/blog/the-state-of-defi-security-2021" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/cs-certik-defi-2021.webp" alt="The State of DeFi Security 2021 report cover" loading="lazy" width="800" height="757"></div>
           <div class="body"><span class="tag"><i>Report</i></span><p class="t">The State of DeFi Security 2021</p></div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="https://www.youtube.com/live/3qb4lLEl5c4" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/co-certik-leaderboard-1.webp" alt="CertiK Security Leaderboard LIVE showcase stream" loading="lazy" width="800" height="447"></div>
           <div class="body"><span class="tag"><i>Live show</i></span><p class="t">Security Leaderboard LIVE showcases</p></div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="https://www.certik.com/resources/blog/phishingattack" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/blog-certik-phishing.webp" alt="CertiK explainer: What is a phishing attack" loading="lazy" width="800" height="627"></div>
           <div class="body"><span class="tag"><i>Explainer</i> Jan 2022</span><p class="t">What is a phishing attack? Tips on how to protect yourself</p></div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="https://www.certik.com/resources/blog/what-is-decentralization" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/blog-certik-decentralization.webp" alt="CertiK explainer: What is decentralization" loading="lazy" width="800" height="842"></div>
           <div class="body"><span class="tag"><i>Explainer</i> Jan 2022</span><p class="t">What is decentralization?</p></div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -564,22 +586,22 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
         </ul>
       </div>
       <div class="grid g4">
-        <div class="card">
+        <a class="card" href="https://blog.bitgo.com/launching-support-for-solana-6497276493e3" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/blog-bitgo-solana.webp" style="object-position:50% 75%" alt="BitGo launching support for Solana" loading="lazy" width="800" height="842"></div>
           <div class="body"><span class="tag"><i>Launch</i> Aug 2022</span><p class="t">Launching support for Solana</p></div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="https://blog.bitgo.com/launching-support-for-polkadot-fd16d9a5fbc7" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/blog-bitgo-polkadot.webp" style="object-position:50% 75%" alt="BitGo launching support for Polkadot" loading="lazy" width="800" height="834"></div>
           <div class="body"><span class="tag"><i>Launch</i> Aug 2022</span><p class="t">Launching support for Polkadot</p></div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="https://www.bitgo.com/resources/blog/nike-chooses-bitgo-wallets-to-power-swoosh-virtual-creations/" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/blog-bitgo-nike.webp" alt="Nike chooses BitGo wallets to power .SWOOSH" loading="lazy" width="800" height="596"></div>
           <div class="body"><span class="tag"><i>Announcement</i></span><p class="t">Nike chooses BitGo wallets to power .SWOOSH</p></div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="https://youtu.be/RvJVDZHUA-o" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/co-bitgo-nft-webinar.webp" alt="NFTs: The Next Creative Renaissance webinar" loading="lazy" width="800" height="520"></div>
           <div class="body"><span class="tag"><i>Webinar</i></span><p class="t">NFTs: The Next Creative Renaissance</p></div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -596,9 +618,23 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
   </div>
 </section>
 
+<section class="family" id="barth-reach">
+  <div class="wrap">
+    <p class="mono">0x40 &nbsp;/&nbsp; Also from Barth Capital</p>
+    <a class="family-card" href="https://barthreach.com/" rel="noopener">
+      <img src="/img/barth-reach-mark.png" alt="" width="56" height="56" loading="lazy">
+      <div>
+        <p class="family-name">Barth Reach</p>
+        <p class="family-desc">Barth Capital's local marketing practice. Helps businesses in Palm Beach County get found in search and AI answers.</p>
+      </div>
+      <span class="mono family-go">barthreach.com &#8599;</span>
+    </a>
+  </div>
+</section>
+
 <section class="contact" id="contact" style="border-bottom:0">
   <div class="wrap">
-    <p class="mono">0x40 &nbsp;/&nbsp; Contact</p>
+    <p class="mono">0x50 &nbsp;/&nbsp; Contact</p>
     <h2 style="margin-top:14px">Email is the fastest way to reach me.</h2>
     <p>For product marketing roles and engagements, write to aaron@barthcap.io.</p>
     <div class="cta">
