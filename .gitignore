@@ -1,0 +1,14 @@
+# macOS junk. This is why .DS_Store kept showing up in the file count.
+.DS_Store
+._*
+
+# Editor noise
+.vscode/
+*.swp
+
+# Never deploy archives or scratch
+*.zip
+_to_delete/
+
+# Wrangler local state and cache
+.wrangler/

@@ -1,0 +1,16 @@
+{
+  // Cloudflare Workers static assets, same setup as barthreach.com.
+  // Plain HTML, no build step, no "main" Worker script: ./public is served as is.
+  //
+  // "name" MUST match the Worker name in the Cloudflare dashboard or the build fails.
+  "name": "barthcap-site",
+  "compatibility_date": "2026-09-24",
+
+  // Every branch upload gets its own private preview URL.
+  "workers_dev": true,
+  "preview_urls": true,
+
+  "assets": {
+    "directory": "./public"
+  }
+}
