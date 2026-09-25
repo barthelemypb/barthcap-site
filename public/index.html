@@ -197,6 +197,11 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 @media (min-width:860px){.scope{grid-template-columns:repeat(3,1fr)}}
 .scope div{background:var(--surface);padding:24px}
 @media (min-width:860px){.scope div{padding:28px 36px}}
+.eyebrow{margin-bottom:10px}
+.story .step{font:500 12px var(--mono);color:var(--faint);margin-bottom:10px}
+.story h4{color:var(--text)!important;font:600 17px var(--sans)!important;letter-spacing:-.01em!important;text-transform:none!important}
+.story div{position:relative}
+.wins{border-top:1px solid var(--line)}
 .scope h4{margin:0 0 10px;font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
 .scope p{color:var(--muted);font-size:15px}
 .pubs{padding:24px;border-top:1px solid var(--line)}
@@ -294,15 +299,15 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
       <div class="ledger-head"><span class="mono">Engagements</span><span class="mono">3</span></div>
       <a class="ledger-row" href="#aartoo">
         <span class="ix">0x01</span>
-        <span><span class="nm">Aartoo</span><span class="sc" style="display:block">Acting marketing lead. Created the CoRM category, ran the launch and closed the first paying customers.</span></span>
+        <span><span class="nm">Aartoo</span><span class="sc" style="display:block">Product-market fit and demand in a new category: from fan rewards to the first Community Relationship Manager.</span></span>
       </a>
       <a class="ledger-row" href="#fuzzland">
         <span class="ix">0x02</span>
-        <span><span class="nm">Fuzzland</span><span class="sc" style="display:block">Made on-chain penetration testing a DeFi requirement and positioned Blaz+ as the standard.</span></span>
+        <span><span class="nm">Fuzzland</span><span class="sc" style="display:block">On-chain security, repositioned from a one-time check to an always-on requirement.</span></span>
       </a>
       <a class="ledger-row" href="#redefine">
         <span class="ix">0x03</span>
-        <span><span class="nm">Redefine</span><span class="sc" style="display:block">Rebuilt the sales story and launched partnerships with Safe and SwissBorg.</span></span>
+        <span><span class="nm">Redefine</span><span class="sc" style="display:block">One story for customers and investors, then partnerships with Safe and SwissBorg.</span></span>
       </a>
       <div class="ledger-foot"><span class="mono">Founder</span><span class="mono"><b>Aaron Leibowitz</b></span></div>
     </aside>
@@ -403,7 +408,8 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
       <div class="eng-head">
         <div>
           <a class="logo-link" href="https://www.aartoo.com/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-aartoo.png" alt="Aartoo" height="36" style="height:36px"></a>
-          <h3>Created a new category, launched it and closed the first paying customers.</h3>
+          <p class="mono eyebrow">Case study &nbsp;/&nbsp; Community platform</p>
+          <h3>Building product-market fit and demand in a new category.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Aartoo</dd>
@@ -411,24 +417,27 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
           <dt>Category</dt><dd>CoRM</dd>
         </dl>
       </div>
+      <div class="scope story">
+        <div>
+          <p class="step">01</p>
+          <h4>Where it started</h4>
+          <p>Aartoo began as Open Format, a platform for rewarding fans. Rewards were a feature buyers could live without, and the people running Web3 communities were still making their biggest calls on vibes.</p>
+        </div>
+        <div>
+          <p class="step">02</p>
+          <h4>The repositioning</h4>
+          <p>Rebuilt the product story around the community manager. Aartoo became the first Community Relationship Manager (CoRM): a CRM for community teams that measures, rewards and grows contributions, so decisions run on data instead of vibes. Built the ICP, the messaging and the pricing tiers, and set roadmap priorities from user feedback.</p>
+        </div>
+        <div>
+          <p class="step">03</p>
+          <h4>The launch and the result</h4>
+          <p>Ran the go-to-market launch as acting marketing lead. Directed contractors and agencies across brand identity, website and sales enablement, and built the pitch deck, PR calendar, partner announcements and a recurring AMA series. Closed the first paying customers, Avalanche among them, and signed 10 launch partnerships, including Uniswap.</p>
+        </div>
+      </div>
       <div class="wins">
         <div><b>Avalanche</b><span>among the first paying customers</span></div>
         <div><b>10</b><span>launch partnerships, including Uniswap</span></div>
         <div><b>1st</b><span>Community Relationship Manager for Web3</span></div>
-      </div>
-      <div class="scope">
-        <div>
-          <h4>Positioning and strategy</h4>
-          <p>Built the ICP, the messaging and the pricing tiers. Named the category: the first Community Relationship Manager (CoRM), a platform that measures, rewards and grows community contributions. Set roadmap priorities from user feedback.</p>
-        </div>
-        <div>
-          <h4>Launch</h4>
-          <p>Led the full go-to-market launch. Directed contractors and agency partners across brand identity, website and sales enablement. Built the pitch deck, the PR and content calendar, partner announcements and a recurring AMA series.</p>
-        </div>
-        <div>
-          <h4>Revenue and partners</h4>
-          <p>Closed the first paying customers, Avalanche among them. Signed 10 launch partnerships, including Uniswap. Wrote every piece of brand copy, from blogs and social to launch materials and customer case studies.</p>
-        </div>
       </div>
       <div class="pubs">
         <div class="pubs-head"><span class="mono">Case studies written by Aaron</span><span class="mono">Figures are client results</span></div>
@@ -458,7 +467,8 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
       <div class="eng-head">
         <div>
           <a class="logo-link" href="https://fuzz.land/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-fuzzland.svg" alt="Fuzzland" style="height:40px"></a>
-          <h3>Made on-chain penetration testing a requirement for DeFi protocols.</h3>
+          <p class="mono eyebrow">Case study &nbsp;/&nbsp; On-chain security</p>
+          <h3>Turning on-chain security from a one-time check into an always-on requirement.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Fuzzland</dd>
@@ -467,24 +477,27 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
           <dt>Category</dt><dd>On-chain security</dd>
         </dl>
       </div>
+      <div class="scope story">
+        <div>
+          <p class="step">01</p>
+          <h4>Where it started</h4>
+          <p>Fuzzland built Blaz+, a suite for real-time, on-chain penetration testing. DeFi teams treated security as a box checked before launch, while contract upgrades and new deployments kept creating new risk after it.</p>
+        </div>
+        <div>
+          <p class="step">02</p>
+          <h4>The repositioning</h4>
+          <p>Reframed penetration testing as continuous coverage every DeFi protocol needs. Built the Blaz+ messaging frameworks around real-time, 24/7 protection and positioned the suite as the security standard for DeFi.</p>
+        </div>
+        <div>
+          <p class="step">03</p>
+          <h4>The proof and the result</h4>
+          <p>Backed the claim with evidence: case studies on funds saved, co-branded partner content and a steady content pipeline. Created BlazCTF, a hands-on security competition that put developers inside the problem, and hosted side events at major conferences. Fuzzland was later acquired by Solayer.</p>
+        </div>
+      </div>
       <div class="wins">
         <div><b>Blaz+</b><span>positioned as the security standard for DeFi</span></div>
         <div><b>BlazCTF</b><span>developer security competition, created and run</span></div>
         <div><b>24/7</b><span>on-chain penetration testing, reframed as a requirement</span></div>
-      </div>
-      <div class="scope">
-        <div>
-          <h4>Positioning</h4>
-          <p>Reframed on-chain penetration testing from a one-time check into a requirement for every DeFi protocol. Built the messaging frameworks for the Blaz+ suite around real-time, 24/7 coverage and positioned it as the security standard ahead of Fuzzland's acquisition by Solayer.</p>
-        </div>
-        <div>
-          <h4>Content and partners</h4>
-          <p>Ran the content engine: blog posts, social campaigns and co-branded content with partner protocols. Wrote the customer case studies that turned saved funds into proof.</p>
-        </div>
-        <div>
-          <h4>Developers and events</h4>
-          <p>Created and ran BlazCTF, a hands-on security competition for developers. Hosted side events at major conferences to grow Fuzzland's community.</p>
-        </div>
       </div>
       <div class="pubs">
         <div class="pubs-head"><span class="mono">Case studies written by Aaron</span><span class="mono">Figures are client results</span></div>
@@ -512,31 +525,35 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
       <div class="eng-head">
         <div>
           <a class="logo-link" href="https://web.archive.org/web/2023/https://redefine.net/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-redefine.svg" alt="Redefine" style="height:96px;margin:-26px 0 4px -6px"></a>
-          <h3>Rebuilt Redefine's story, then launched partnerships with Safe and SwissBorg.</h3>
+          <p class="mono eyebrow">Case study &nbsp;/&nbsp; DeFi risk management</p>
+          <h3>One story for customers and investors, then distribution through partners.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Redefine</dd>
           <dt>Category</dt><dd>DeFi risk management</dd>
         </dl>
       </div>
+      <div class="scope story">
+        <div>
+          <p class="step">01</p>
+          <h4>Where it started</h4>
+          <p>Redefine built real-time risk management for DeFi: protection that flags a dangerous transaction before it is signed. The product was ahead of the materials selling it to customers and investors.</p>
+        </div>
+        <div>
+          <p class="step">02</p>
+          <h4>The rebuild</h4>
+          <p>Rebuilt the full communications suite around one story: the website, the sales deck and the investor pitch. Wrote the sales process emails for feedback, feature announcements and client communication, and published security research on live exploits, including reentrancy and the Ledger Connect Kit attack.</p>
+        </div>
+        <div>
+          <p class="step">03</p>
+          <h4>The partnerships</h4>
+          <p>Took the story to partners with larger audiences. Launched partnerships with Safe, the smart account standard with $54B+ in assets under self-custody, and SwissBorg, a crypto app with 500K+ users. Wrote both launch stories and ran a live-streamed AMA program with Safe and Kleros.</p>
+        </div>
+      </div>
       <div class="wins">
         <div><b>$54B+</b><span>in assets under self-custody at Safe, launched as a Redefine partner</span></div>
         <div><b>500K+</b><span>SwissBorg users, with $650M+ in managed assets, at partnership launch</span></div>
         <div><b>Safe + Kleros</b><span>live-streamed AMA program, built and run</span></div>
-      </div>
-      <div class="scope">
-        <div>
-          <h4>Communications</h4>
-          <p>Rebuilt the full communications suite: the website, the sales deck and the investor pitch. Gave Redefine one story for customers and investors.</p>
-        </div>
-        <div>
-          <h4>Partnerships</h4>
-          <p>Launched partnerships with Safe, the smart account standard with $54B+ in assets under self-custody, and SwissBorg, a crypto app with 500K+ users. Wrote both launch stories and ran a live-streamed AMA program with Safe and Kleros.</p>
-        </div>
-        <div>
-          <h4>Sales and research</h4>
-          <p>Wrote the sales process emails for feedback collection, feature announcements and client communication. Published security research on live exploits, including reentrancy and the Ledger Connect Kit attack.</p>
-        </div>
       </div>
       <div class="pubs">
         <div class="pubs-head"><span class="mono">Case studies, posts and events</span></div>
