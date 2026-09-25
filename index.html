@@ -172,6 +172,9 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 .svc-item{background:var(--surface);padding:28px 24px 32px}
 .svc-item h3{font-size:20px;margin:36px 0 12px}
 .svc-item p{color:var(--muted);font-size:15px}
+.svc-item ul{list-style:none;margin:20px 0 0;padding:18px 0 0;border-top:1px solid var(--line);display:grid;gap:9px}
+.svc-item li{position:relative;padding-left:18px;font-size:14px;line-height:1.4;color:var(--text)}
+.svc-item li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:1px;background:var(--accent)}
 
 /* Engagements */
 .eng{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:24px;overflow:hidden}
@@ -266,7 +269,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
     <a class="brand" href="#top" aria-label="Barth Capital, home"><img src="/img/dog.png" alt="" width="30" height="30">Barth Capital</a>
     <nav class="nav" aria-label="Primary">
       <a class="link" href="#work">Work</a>
-      <a class="link" href="#services">Services</a>
+      <a class="link" href="#services">What we do</a>
       <a class="link" href="#experience">Experience</a>
       <a class="btn sm primary" href="mailto:aaron@barthcap.io">Email Aaron</a>
     </nav>
@@ -329,29 +332,59 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
 <section id="services">
   <div class="wrap">
     <div class="sec-head">
-      <p class="mono">0x10 &nbsp;/&nbsp; Services</p>
-      <h2>Four jobs, one goal: make the product required.</h2>
+      <p class="mono">0x10 &nbsp;/&nbsp; What we do</p>
+      <h2>Everything your product needs to go from great tech to adoption.</h2>
     </div>
     <div class="svc">
       <div class="svc-item">
         <p class="mono">01</p>
-        <h3>Brand messaging</h3>
-        <p>Positioning, message frameworks and the copy that carries them. Website, deck, blog and social all say the same thing.</p>
+        <h3>Narrative and positioning</h3>
+        <p>Find the buyer, the need and the story that makes the product required.</p>
+        <ul>
+          <li>Primary research and customer interviews</li>
+          <li>Competitive analysis</li>
+          <li>ICP definition</li>
+          <li>Category design</li>
+          <li>Positioning and messaging frameworks</li>
+          <li>Pricing and packaging</li>
+        </ul>
       </div>
       <div class="svc-item">
         <p class="mono">02</p>
         <h3>Go to market</h3>
-        <p>Launch plans with an audience, a channel and a date. Website, pitch deck, PR calendar and partner announcements.</p>
+        <p>Take the story to market with a launch that has an audience, a channel and a date.</p>
+        <ul>
+          <li>Launch strategy and plans</li>
+          <li>Website copy</li>
+          <li>Pitch and investor decks</li>
+          <li>Brand refreshes</li>
+          <li>PR and content calendars</li>
+          <li>Partner announcements</li>
+        </ul>
       </div>
       <div class="svc-item">
         <p class="mono">03</p>
         <h3>Sales enablement</h3>
-        <p>Decks, email templates and training. Every rep explains the product the same way.</p>
+        <p>Give the sales team one way to explain the product, and the material to back it.</p>
+        <ul>
+          <li>Sales decks</li>
+          <li>Email templates and sequences</li>
+          <li>Sales training</li>
+          <li>Customer onboarding and feature announcements</li>
+        </ul>
       </div>
       <div class="svc-item">
         <p class="mono">04</p>
-        <h3>Co-marketing</h3>
-        <p>Case studies, joint AMAs, co-branded content and conference side events with partners who share your buyer.</p>
+        <h3>Proof and co-marketing</h3>
+        <p>Turn customers and partners into evidence the next buyer trusts.</p>
+        <ul>
+          <li>Case studies</li>
+          <li>Partner campaigns and co-branded content</li>
+          <li>AMAs and live streams</li>
+          <li>Developer programs and CTFs</li>
+          <li>Conference side events</li>
+          <li>Blogs and thought leadership</li>
+        </ul>
       </div>
     </div>
   </div>
