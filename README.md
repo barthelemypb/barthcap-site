@@ -19,11 +19,12 @@ Do not drag files into the Cloudflare dashboard.
 ## House rules for this site
 
 - Barth Capital engagements are Aartoo, Fuzzland and Redefine only.
-- CertiK and BitGo were full-time roles. They live in the founder background
+- CertiK, BitGo, Novo Protocol and BEN are Aaron's experience. They live in the Experience
   section and never appear in a client grid or next to engagement work.
 - Case study figures are client results from case studies Aaron wrote. Label them that way.
 - No em dashes or en dashes anywhere in the copy.
-- No invented dates, metrics or outcomes.
+- No dates on engagements, roles or content tiles (Aaron's call). No invented metrics or outcomes.
+- Every tile and logo links to its source.
 - Barth Reach is a Barth Capital practice. It gets its own "Also from Barth Capital" block, never a spot among the engagements.
 
 ## Brand

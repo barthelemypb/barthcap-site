@@ -15,13 +15,13 @@
 <meta property="og:url" content="https://barthcap.io/">
 <meta property="og:site_name" content="Barth Capital">
 <meta property="og:title" content="Barth Capital">
-<meta property="og:description" content="Web3 product marketing by Aaron Leibowitz, crypto-native since 2013.">
+<meta property="og:description" content="Web3 product marketing by Aaron Leibowitz. Narrative, positioning and 0 to 1 GTM, built for your buyer.">
 <meta property="og:image" content="https://barthcap.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Barth Capital">
-<meta name="twitter:description" content="Web3 product marketing by Aaron Leibowitz, crypto-native since 2013.">
+<meta name="twitter:description" content="Web3 product marketing by Aaron Leibowitz. Narrative, positioning and 0 to 1 GTM, built for your buyer.">
 <meta name="twitter:image" content="https://barthcap.io/og.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,7 +58,7 @@
       "name": "Aaron Leibowitz",
       "jobTitle": "Founder",
       "worksFor": { "@id": "https://barthcap.io/#organization" },
-      "url": "https://barthcap.io/#background",
+      "url": "https://barthcap.io/#experience",
       "image": "https://barthcap.io/img/aaron.webp",
       "email": "aaron@barthcap.io",
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "Tulane University" },
@@ -134,7 +134,7 @@ p{margin:0}
 .hero .wrap{position:relative;z-index:1;display:grid;gap:48px;padding-top:64px;padding-bottom:72px}
 @media (min-width:980px){.hero .wrap{grid-template-columns:1.25fr 1fr;align-items:center;gap:64px;padding-top:112px;padding-bottom:120px}}
 .hero h1{font-size:clamp(40px,7.2vw,76px);margin:20px 0 24px}
-.hero h1 span{color:var(--muted)}
+.hero h1 span{display:block;margin-top:.45em;font-size:.46em;line-height:1.2;letter-spacing:-.015em;color:var(--muted);max-width:18em}
 .lead{font-size:18px;color:var(--muted);max-width:560px}
 .lead strong{color:var(--text);font-weight:500}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
@@ -177,6 +177,8 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 .eng{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:24px;overflow:hidden}
 .eng-head{display:grid;gap:20px;padding:28px 24px;border-bottom:1px solid var(--line)}
 @media (min-width:860px){.eng-head{grid-template-columns:1fr auto;align-items:end;padding:36px 36px 32px}}
+.logo-link{display:inline-block;transition:opacity .15s}
+.logo-link:hover{opacity:.75}
 .eng-logo{height:36px;width:auto;margin-bottom:22px}
 .eng-head h3{font-size:clamp(24px,3.2vw,32px);max-width:640px}
 .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-family:var(--mono);font-size:12px;letter-spacing:.03em;text-transform:uppercase}
@@ -225,7 +227,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
 .role ul,.earlier ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
 .role li,.earlier li{position:relative;padding-left:22px;color:var(--muted)}
 .role li::before,.earlier li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:1px;background:var(--faint)}
-.role li strong{color:var(--text);font-weight:500}
+.role li strong,.earlier li strong{color:var(--text);font-weight:500}
 .earlier{display:grid;gap:18px;border-top:1px solid var(--line);padding-top:40px}
 @media (min-width:860px){.earlier{grid-template-columns:260px 1fr;gap:56px}}
 .earlier img{height:64px;width:auto}
@@ -259,7 +261,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
     <nav class="nav" aria-label="Primary">
       <a class="link" href="#work">Work</a>
       <a class="link" href="#services">Services</a>
-      <a class="link" href="#background">Background</a>
+      <a class="link" href="#experience">Experience</a>
       <a class="btn sm primary" href="mailto:aaron@barthcap.io">Email Aaron</a>
     </nav>
   </div>
@@ -270,9 +272,9 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
 <div class="hero">
   <div class="wrap">
     <div>
-      <p class="mono"><b>Barth Capital</b> &nbsp;/&nbsp; Founded 2023</p>
-      <h1>Web3 product marketing.<br><span>Built by a crypto native.</span></h1>
-      <p class="lead"><strong>Aaron Leibowitz, in crypto since 2013.</strong> I take technical products the market treats as optional and make them non-negotiable. Positioning, launches, sales enablement and co-marketing for crypto-native teams.</p>
+      <p class="mono"><b>Barth Capital</b> &nbsp;/&nbsp; Aaron Leibowitz</p>
+      <h1>Web3 product marketing.<span>Narrative, positioning and 0 to 1 GTM, built for your buyer.</span></h1>
+      <p class="lead"><strong>Aaron Leibowitz, crypto-native since 2013.</strong> I take technical products the market treats as optional and make them non-negotiable.</p>
       <div class="cta">
         <a class="btn primary" href="mailto:aaron@barthcap.io">aaron@barthcap.io</a>
         <a class="btn" href="#work">See the work</a>
@@ -293,7 +295,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
         <span class="ix">0x03</span>
         <span><span class="nm">Redefine</span><span class="sc" style="display:block">Comms overhaul for DeFi risk management</span></span>
       </a>
-      <div class="ledger-foot"><span class="mono">Founder</span><span class="mono"><b>2023 to present</b></span></div>
+      <div class="ledger-foot"><span class="mono">Founder</span><span class="mono"><b>Aaron Leibowitz</b></span></div>
     </aside>
   </div>
 </div>
@@ -361,12 +363,11 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
     <article class="eng" id="aartoo">
       <div class="eng-head">
         <div>
-          <img class="eng-logo" src="/img/logo-aartoo.png" alt="Aartoo" height="36" style="height:36px">
+          <a class="logo-link" href="https://www.aartoo.com/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-aartoo.png" alt="Aartoo" height="36" style="height:36px"></a>
           <h3>Positioned Aartoo as the first Community Relationship Manager and ran the launch.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Aartoo</dd>
-          <dt>Period</dt><dd>2025 to 2026</dd>
           <dt>Category</dt><dd>CoRM</dd>
         </dl>
       </div>
@@ -411,12 +412,11 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
     <article class="eng" id="fuzzland">
       <div class="eng-head">
         <div>
-          <img class="eng-logo" src="/img/logo-fuzzland.svg" alt="Fuzzland" style="height:40px">
+          <a class="logo-link" href="https://fuzz.land/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-fuzzland.svg" alt="Fuzzland" style="height:40px"></a>
           <h3>Made on-chain penetration testing a requirement for DeFi protocols.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Fuzzland</dd>
-          <dt>Period</dt><dd>2024 to 2025</dd>
           <dt>Product</dt><dd>Blaz+ suite</dd>
           <dt>Category</dt><dd>On-chain security</dd>
         </dl>
@@ -460,12 +460,11 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
     <article class="eng" id="redefine">
       <div class="eng-head">
         <div>
-          <img class="eng-logo" src="/img/logo-redefine.svg" alt="Redefine" style="height:96px;margin:-26px 0 4px -6px">
+          <a class="logo-link" href="https://web.archive.org/web/2023/https://redefine.net/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-redefine.svg" alt="Redefine" style="height:96px;margin:-26px 0 4px -6px"></a>
           <h3>Rebuilt Redefine's communications and opened its partner channel.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Redefine</dd>
-          <dt>Period</dt><dd>2023</dd>
           <dt>Category</dt><dd>DeFi risk management</dd>
         </dl>
       </div>
@@ -489,14 +488,14 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
           <a class="card" href="https://web.archive.org/web/20231004001255/https://redefine.net/media/swissborg-case-study/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-redefine-swissborg.webp" alt="SwissBorg and Redefine case study" loading="lazy" width="800" height="711"></div>
             <div class="body">
-              <span class="tag"><i>Case study</i> Jul 2023</span>
+              <span class="tag"><i>Case study</i></span>
               <p class="t">SwissBorg streamlines DeFi trading with Redefine's risk management solution</p>
             </div>
           </a>
           <a class="card" href="https://web.archive.org/web/20230626134048/https://redefine.net/media/safe-announcement/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-redefine-safe.webp" alt="Redefine and Safe partnership case study" loading="lazy" width="800" height="728"></div>
             <div class="body">
-              <span class="tag"><i>Case study</i> Jun 2023</span>
+              <span class="tag"><i>Case study</i></span>
               <p class="t">Redefine partners with Safe for treasury deployment protection</p>
             </div>
           </a>
@@ -510,14 +509,14 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
           <a class="card" href="https://web.archive.org/web/20250326040335/https://redefine.net/media/Reentrancy%20Attack%20With%20Redefine/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/blog-redefine-reentrancy.webp" alt="Navigating the Reentrancy Attack With Redefine blog post" loading="lazy" width="800" height="560"></div>
             <div class="body">
-              <span class="tag"><i>Blog</i> Aug 2023</span>
+              <span class="tag"><i>Blog</i></span>
               <p class="t">Navigating the reentrancy attack with Redefine</p>
             </div>
           </a>
           <a class="card" href="https://web.archive.org/web/20250326040341/https://redefine.net/media/ledger-exploit/" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/blog-redefine-ledger.webp" alt="Ledger Connect Kit exploit analysis blog post" loading="lazy" width="800" height="603"></div>
             <div class="body">
-              <span class="tag"><i>Blog</i> Dec 2023</span>
+              <span class="tag"><i>Blog</i></span>
               <p class="t">The Ledger Connect Kit exploit and the role of Redefine in user protection</p>
             </div>
           </a>
@@ -527,25 +526,55 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
   </div>
 </section>
 
-<section id="background">
+<section id="experience">
   <div class="wrap">
     <div class="bg-intro">
       <div class="portrait"><img src="/img/aaron.webp" alt="Aaron Leibowitz" width="720" height="1080" loading="lazy"></div>
       <div>
-        <p class="mono">0x30 &nbsp;/&nbsp; Founder background</p>
+        <p class="mono">0x30 &nbsp;/&nbsp; Experience</p>
         <h2>Aaron Leibowitz</h2>
-        <p>Crypto-native since 2013. I founded Barth Capital in 2023.</p>
-        <p>Before that I held full-time roles at CertiK and BitGo. Both sold technical products to crypto-native buyers who had not yet decided the product was required. That is still the work.</p>
+        <p>Crypto-native since 2013. Founder of Barth Capital.</p>
+        <p>Before that I ran product marketing at BitGo and CertiK and co-founded Novo Protocol. Every one of them sold a technical product to buyers who had not yet decided it was required. That is still the work.</p>
       </div>
     </div>
-
-    <span class="label-prior">Prior full-time roles</span>
 
     <div class="role" style="border-top:0">
       <div class="role-head">
         <div>
-          <img class="role-logo" src="/img/logo-certik.png" alt="CertiK" style="height:30px">
-          <p class="mono">Full-time &nbsp;/&nbsp; Employee #18</p>
+          <a class="logo-link" href="https://www.bitgo.com/" target="_blank" rel="noopener"><img class="role-logo" src="/img/logo-bitgo.svg" alt="BitGo" style="height:34px"></a>
+          <p class="mono">Product Marketing Manager</p>
+        </div>
+        <ul>
+          <li><strong>Managed partnerships with 15 token foundations</strong>, bringing in $300M+ in new custody assets.</li>
+          <li>My team focused on DeFi and moved existing clients' holdings into BitGo custody.</li>
+          <li>Ran sales training for new token launches, contributed to the website overhaul and set the executive thought-leadership content strategy.</li>
+        </ul>
+      </div>
+      <div class="grid g4">
+        <a class="card" href="https://blog.bitgo.com/launching-support-for-solana-6497276493e3" target="_blank" rel="noopener">
+          <div class="thumb"><img src="/img/blog-bitgo-solana.webp" style="object-position:50% 75%" alt="BitGo launching support for Solana" loading="lazy" width="800" height="842"></div>
+          <div class="body"><span class="tag"><i>Launch</i></span><p class="t">Launching support for Solana</p></div>
+        </a>
+        <a class="card" href="https://blog.bitgo.com/launching-support-for-polkadot-fd16d9a5fbc7" target="_blank" rel="noopener">
+          <div class="thumb"><img src="/img/blog-bitgo-polkadot.webp" style="object-position:50% 75%" alt="BitGo launching support for Polkadot" loading="lazy" width="800" height="834"></div>
+          <div class="body"><span class="tag"><i>Launch</i></span><p class="t">Launching support for Polkadot</p></div>
+        </a>
+        <a class="card" href="https://www.bitgo.com/resources/blog/nike-chooses-bitgo-wallets-to-power-swoosh-virtual-creations/" target="_blank" rel="noopener">
+          <div class="thumb"><img src="/img/blog-bitgo-nike.webp" alt="Nike chooses BitGo wallets to power .SWOOSH" loading="lazy" width="800" height="596"></div>
+          <div class="body"><span class="tag"><i>Announcement</i></span><p class="t">Nike chooses BitGo wallets to power .SWOOSH</p></div>
+        </a>
+        <a class="card" href="https://youtu.be/RvJVDZHUA-o" target="_blank" rel="noopener">
+          <div class="thumb"><img src="/img/co-bitgo-nft-webinar.webp" alt="NFTs: The Next Creative Renaissance webinar" loading="lazy" width="800" height="520"></div>
+          <div class="body"><span class="tag"><i>Webinar</i></span><p class="t">NFTs: The Next Creative Renaissance</p></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-head">
+        <div>
+          <a class="logo-link" href="https://www.certik.com/" target="_blank" rel="noopener"><img class="role-logo" src="/img/logo-certik.png" alt="CertiK" style="height:30px"></a>
+          <p class="mono">Product Marketing Manager<br>Employee #18</p>
         </div>
         <ul>
           <li><strong>Moved smart contract audits from nice-to-have to must-have.</strong> Built the market narrative that made the case across DeFi.</li>
@@ -564,11 +593,11 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
         </a>
         <a class="card" href="https://www.certik.com/resources/blog/phishingattack" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/blog-certik-phishing.webp" alt="CertiK explainer: What is a phishing attack" loading="lazy" width="800" height="627"></div>
-          <div class="body"><span class="tag"><i>Explainer</i> Jan 2022</span><p class="t">What is a phishing attack? Tips on how to protect yourself</p></div>
+          <div class="body"><span class="tag"><i>Explainer</i></span><p class="t">What is a phishing attack? Tips on how to protect yourself</p></div>
         </a>
         <a class="card" href="https://www.certik.com/resources/blog/what-is-decentralization" target="_blank" rel="noopener">
           <div class="thumb"><img src="/img/blog-certik-decentralization.webp" alt="CertiK explainer: What is decentralization" loading="lazy" width="800" height="842"></div>
-          <div class="body"><span class="tag"><i>Explainer</i> Jan 2022</span><p class="t">What is decentralization?</p></div>
+          <div class="body"><span class="tag"><i>Explainer</i></span><p class="t">What is decentralization?</p></div>
         </a>
       </div>
     </div>
@@ -576,43 +605,26 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
     <div class="role">
       <div class="role-head">
         <div>
-          <img class="role-logo" src="/img/logo-bitgo.svg" alt="BitGo" style="height:34px">
-          <p class="mono">Full-time</p>
+          <a class="logo-link" href="https://www.novoprotocol.com/" target="_blank" rel="noopener"><img class="role-logo" src="/img/logo-novo.png" alt="Novo Protocol" style="height:34px"></a>
+          <p class="mono">Co-Founder, Product Manager</p>
         </div>
         <ul>
-          <li><strong>Managed partnerships with 15 token foundations</strong>, bringing in $300M+ in new custody assets.</li>
-          <li>My team focused on DeFi and moved existing clients' holdings into BitGo custody.</li>
-          <li>Ran sales training for new token launches, contributed to the website overhaul and set the executive thought-leadership content strategy.</li>
+          <li><strong>Co-founded a decentralized data marketplace</strong>, a Dun &amp; Bradstreet Latin America venture.</li>
+          <li>Led product strategy and marketing. Owned the product narrative, go-to-market positioning and all written collateral from concept through pre-launch.</li>
+          <li>Wrote the white paper: staking mechanisms, verification models and governance.</li>
+          <li>Designed the tokenomics for the NOVO utility token, a sybil-resistant incentive model built for adoption.</li>
         </ul>
-      </div>
-      <div class="grid g4">
-        <a class="card" href="https://blog.bitgo.com/launching-support-for-solana-6497276493e3" target="_blank" rel="noopener">
-          <div class="thumb"><img src="/img/blog-bitgo-solana.webp" style="object-position:50% 75%" alt="BitGo launching support for Solana" loading="lazy" width="800" height="842"></div>
-          <div class="body"><span class="tag"><i>Launch</i> Aug 2022</span><p class="t">Launching support for Solana</p></div>
-        </a>
-        <a class="card" href="https://blog.bitgo.com/launching-support-for-polkadot-fd16d9a5fbc7" target="_blank" rel="noopener">
-          <div class="thumb"><img src="/img/blog-bitgo-polkadot.webp" style="object-position:50% 75%" alt="BitGo launching support for Polkadot" loading="lazy" width="800" height="834"></div>
-          <div class="body"><span class="tag"><i>Launch</i> Aug 2022</span><p class="t">Launching support for Polkadot</p></div>
-        </a>
-        <a class="card" href="https://www.bitgo.com/resources/blog/nike-chooses-bitgo-wallets-to-power-swoosh-virtual-creations/" target="_blank" rel="noopener">
-          <div class="thumb"><img src="/img/blog-bitgo-nike.webp" alt="Nike chooses BitGo wallets to power .SWOOSH" loading="lazy" width="800" height="596"></div>
-          <div class="body"><span class="tag"><i>Announcement</i></span><p class="t">Nike chooses BitGo wallets to power .SWOOSH</p></div>
-        </a>
-        <a class="card" href="https://youtu.be/RvJVDZHUA-o" target="_blank" rel="noopener">
-          <div class="thumb"><img src="/img/co-bitgo-nft-webinar.webp" alt="NFTs: The Next Creative Renaissance webinar" loading="lazy" width="800" height="520"></div>
-          <div class="body"><span class="tag"><i>Webinar</i></span><p class="t">NFTs: The Next Creative Renaissance</p></div>
-        </a>
       </div>
     </div>
 
     <div class="earlier">
       <div>
-        <p class="mono" style="margin-bottom:16px">Earlier</p>
-        <img src="/img/logo-ben.png" alt="Blockchain Education Network" loading="lazy">
+        <p class="mono" style="margin-bottom:16px">Founder, Tulane chapter</p>
+        <a class="logo-link" href="https://www.blockchainedu.org/" target="_blank" rel="noopener"><img src="/img/logo-ben.png" alt="Blockchain Education Network" loading="lazy"></a>
       </div>
       <ul>
-        <li>Founded one of the first chapters of what became the Blockchain Education Network, at Tulane.</li>
-        <li>Circle campus ambassador, 2015.</li>
+        <li><strong>Founded one of the first chapters of what became the Blockchain Education Network</strong>, at Tulane.</li>
+        <li>Ran monthly sessions on blockchain and crypto for students, educators and the local community.</li>
       </ul>
     </div>
   </div>
