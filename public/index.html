@@ -184,6 +184,12 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-family:var(--mono);font-size:12px;letter-spacing:.03em;text-transform:uppercase}
 .kv dt{color:var(--faint)}
 .kv dd{margin:0;color:var(--text)}
+.wins{display:grid;gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+@media (min-width:860px){.wins{grid-template-columns:repeat(3,1fr)}}
+.wins div{background:var(--surface);padding:20px 24px;display:grid;gap:4px;align-content:start}
+@media (min-width:860px){.wins div{padding:24px 36px}}
+.wins b{font-size:clamp(22px,2.6vw,28px);font-weight:600;letter-spacing:-.02em;color:var(--accent);line-height:1.1}
+.wins span{font-size:14px;color:var(--muted);line-height:1.4}
 .scope{display:grid;gap:1px;background:var(--line)}
 @media (min-width:860px){.scope{grid-template-columns:repeat(3,1fr)}}
 .scope div{background:var(--surface);padding:24px}
@@ -274,7 +280,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
     <div>
       <p class="mono"><b>Barth Capital</b> &nbsp;/&nbsp; Aaron Leibowitz</p>
       <h1>Web3 product marketing.<span>Narrative, positioning and 0 to 1 GTM, built for your buyer.</span></h1>
-      <p class="lead"><strong>Aaron Leibowitz, crypto-native since 2013.</strong> I take technical products the market treats as optional and make them non-negotiable.</p>
+      <p class="lead">Translating complex technical products into value buyers understand. Helping the market see the need, then making the product the obvious answer.</p>
       <div class="cta">
         <a class="btn primary" href="mailto:aaron@barthcap.io">aaron@barthcap.io</a>
         <a class="btn" href="#work">See the work</a>
@@ -285,15 +291,15 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
       <div class="ledger-head"><span class="mono">Engagements</span><span class="mono">3</span></div>
       <a class="ledger-row" href="#aartoo">
         <span class="ix">0x01</span>
-        <span><span class="nm">Aartoo</span><span class="sc" style="display:block">Category launch for the first Community Relationship Manager</span></span>
+        <span><span class="nm">Aartoo</span><span class="sc" style="display:block">Acting marketing lead. Created the CoRM category, ran the launch and closed the first paying customers.</span></span>
       </a>
       <a class="ledger-row" href="#fuzzland">
         <span class="ix">0x02</span>
-        <span><span class="nm">Fuzzland</span><span class="sc" style="display:block">Messaging for Blaz+ on-chain penetration testing</span></span>
+        <span><span class="nm">Fuzzland</span><span class="sc" style="display:block">Made on-chain penetration testing a DeFi requirement and positioned Blaz+ as the standard.</span></span>
       </a>
       <a class="ledger-row" href="#redefine">
         <span class="ix">0x03</span>
-        <span><span class="nm">Redefine</span><span class="sc" style="display:block">Comms overhaul for DeFi risk management</span></span>
+        <span><span class="nm">Redefine</span><span class="sc" style="display:block">Rebuilt the website, sales deck and investor pitch. Ran the partner AMA program.</span></span>
       </a>
       <div class="ledger-foot"><span class="mono">Founder</span><span class="mono"><b>Aaron Leibowitz</b></span></div>
     </aside>
@@ -364,29 +370,35 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
       <div class="eng-head">
         <div>
           <a class="logo-link" href="https://www.aartoo.com/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-aartoo.png" alt="Aartoo" height="36" style="height:36px"></a>
-          <h3>Positioned Aartoo as the first Community Relationship Manager and ran the launch.</h3>
+          <h3>Created a new category, launched it and closed the first paying customers.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Aartoo</dd>
+          <dt>Role</dt><dd>Acting marketing lead</dd>
           <dt>Category</dt><dd>CoRM</dd>
         </dl>
       </div>
+      <div class="wins">
+        <div><b>Avalanche</b><span>among the first paying customers</span></div>
+        <div><b>10</b><span>launch partnerships, including Uniswap</span></div>
+        <div><b>1st</b><span>Community Relationship Manager for Web3</span></div>
+      </div>
       <div class="scope">
         <div>
-          <h4>Positioning</h4>
-          <p>Defined CoRM: a platform for projects to measure, reward and grow community contributions. Set the product narrative, pricing tiers and roadmap priorities from user feedback.</p>
+          <h4>Positioning and strategy</h4>
+          <p>Built the ICP, the messaging and the pricing tiers. Named the category: the first Community Relationship Manager (CoRM), a platform that measures, rewards and grows community contributions. Set roadmap priorities from user feedback.</p>
         </div>
         <div>
           <h4>Launch</h4>
-          <p>Ran the full go-to-market launch. New website, pitch deck, brand identity, PR and content calendar, partner announcements and a recurring AMA series.</p>
+          <p>Led the full go-to-market launch. Directed contractors and agency partners across brand identity, website and sales enablement. Built the pitch deck, the PR and content calendar, partner announcements and a recurring AMA series.</p>
         </div>
         <div>
-          <h4>Content</h4>
-          <p>Wrote all brand messaging and copy. Blogs, social campaigns and launch materials.</p>
+          <h4>Revenue and partners</h4>
+          <p>Closed the first paying customers, Avalanche among them. Signed 10 launch partnerships, including Uniswap. Wrote every piece of brand copy, from blogs and social to launch materials and customer case studies.</p>
         </div>
       </div>
       <div class="pubs">
-        <div class="pubs-head"><span class="mono">Case studies I wrote</span><span class="mono">Figures are client results</span></div>
+        <div class="pubs-head"><span class="mono">Case studies written by Aaron</span><span class="mono">Figures are client results</span></div>
         <div class="grid">
           <a class="card" href="https://x.com/ask_aartoo/status/2024511672132784322" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-aartoo-turbo.webp" alt="Aartoo and Turbo case study cover" loading="lazy" width="800" height="545"></div>
@@ -418,25 +430,31 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
         <dl class="kv">
           <dt>Client</dt><dd>Fuzzland</dd>
           <dt>Product</dt><dd>Blaz+ suite</dd>
+          <dt>Outcome</dt><dd>Acquired by Solayer</dd>
           <dt>Category</dt><dd>On-chain security</dd>
         </dl>
       </div>
+      <div class="wins">
+        <div><b>Blaz+</b><span>positioned as the security standard for DeFi</span></div>
+        <div><b>BlazCTF</b><span>developer security competition, created and run</span></div>
+        <div><b>24/7</b><span>on-chain penetration testing, reframed as a requirement</span></div>
+      </div>
       <div class="scope">
         <div>
-          <h4>Messaging</h4>
-          <p>Built the messaging frameworks for the Blaz+ suite. Framed real-time, 24/7 on-chain penetration testing as a necessity for every DeFi protocol.</p>
+          <h4>Positioning</h4>
+          <p>Reframed on-chain penetration testing from a one-time check into a requirement for every DeFi protocol. Built the messaging frameworks for the Blaz+ suite around real-time, 24/7 coverage and positioned it as the security standard ahead of Fuzzland's acquisition by Solayer.</p>
         </div>
         <div>
-          <h4>Content</h4>
-          <p>Wrote blog posts, ran social campaigns and produced co-branded content with partners.</p>
+          <h4>Content and partners</h4>
+          <p>Ran the content engine: blog posts, social campaigns and co-branded content with partner protocols. Wrote the customer case studies that turned saved funds into proof.</p>
         </div>
         <div>
-          <h4>Community</h4>
-          <p>Organized BlazCTF, a hands-on security challenge for developers. Hosted side events at major conferences.</p>
+          <h4>Developers and events</h4>
+          <p>Created and ran BlazCTF, a hands-on security competition for developers. Hosted side events at major conferences to grow Fuzzland's community.</p>
         </div>
       </div>
       <div class="pubs">
-        <div class="pubs-head"><span class="mono">Case studies I wrote</span><span class="mono">Figures are client results</span></div>
+        <div class="pubs-head"><span class="mono">Case studies written by Aaron</span><span class="mono">Figures are client results</span></div>
         <div class="grid">
           <a class="card" href="https://web.archive.org/web/20241204093327/https://fuzz.land/how-fuzzland-used-100-to-save-65-million2-43" target="_blank" rel="noopener">
             <div class="thumb"><img src="/img/cs-fuzzland-65m.webp" alt="Fuzzland case study cover: How Fuzzland Used $100 to Save $6.5 Million" loading="lazy" width="800" height="490"></div>
@@ -461,25 +479,30 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
       <div class="eng-head">
         <div>
           <a class="logo-link" href="https://web.archive.org/web/2023/https://redefine.net/" target="_blank" rel="noopener"><img class="eng-logo" src="/img/logo-redefine.svg" alt="Redefine" style="height:96px;margin:-26px 0 4px -6px"></a>
-          <h3>Rebuilt Redefine's communications and opened its partner channel.</h3>
+          <h3>Rebuilt Redefine's story for customers and investors, then took it to partners.</h3>
         </div>
         <dl class="kv">
           <dt>Client</dt><dd>Redefine</dd>
           <dt>Category</dt><dd>DeFi risk management</dd>
         </dl>
       </div>
+      <div class="wins">
+        <div><b>3</b><span>core sales assets rebuilt: website, sales deck, investor pitch</span></div>
+        <div><b>Safe + Kleros</b><span>live-streamed AMA partners</span></div>
+        <div><b>SwissBorg</b><span>customer case study, plus a Safe partnership launch</span></div>
+      </div>
       <div class="scope">
         <div>
           <h4>Communications</h4>
-          <p>Overhauled the full comms suite. Website revamp, sales presentations and investor pitches.</p>
+          <p>Rebuilt the full communications suite: the website, the sales deck and the investor pitch. Gave Redefine one story for customers and investors.</p>
         </div>
         <div>
           <h4>Co-marketing</h4>
-          <p>Launched partner campaigns, including a live-streamed AMA series with teams such as Safe and Kleros.</p>
+          <p>Built and ran the co-marketing and AMA program, including live-streamed sessions with Safe and Kleros. Turned integrations into case studies with SwissBorg and Safe.</p>
         </div>
         <div>
-          <h4>Sales process</h4>
-          <p>Wrote email templates for feedback collection, feature announcements and client communication.</p>
+          <h4>Sales and research</h4>
+          <p>Wrote the sales process emails for feedback collection, feature announcements and client communication. Published security research on live exploits, including reentrancy and the Ledger Connect Kit attack.</p>
         </div>
       </div>
       <div class="pubs">
@@ -534,7 +557,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
         <p class="mono">0x30 &nbsp;/&nbsp; Experience</p>
         <h2>Aaron Leibowitz</h2>
         <p>Crypto-native since 2013. Founder of Barth Capital.</p>
-        <p>Before that I ran product marketing at BitGo and CertiK and co-founded Novo Protocol. Every one of them sold a technical product to buyers who had not yet decided it was required. That is still the work.</p>
+        <p>Before Barth Capital: product marketing at BitGo and CertiK, and co-founder of Novo Protocol. Each one sold a technical product to buyers who had not yet decided it was required.</p>
       </div>
     </div>
 
@@ -546,7 +569,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
         </div>
         <ul>
           <li><strong>Managed partnerships with 15 token foundations</strong>, bringing in $300M+ in new custody assets.</li>
-          <li>My team focused on DeFi and moved existing clients' holdings into BitGo custody.</li>
+          <li>Focused on DeFi and moved existing clients' holdings into BitGo custody.</li>
           <li>Ran sales training for new token launches, contributed to the website overhaul and set the executive thought-leadership content strategy.</li>
         </ul>
       </div>
@@ -647,7 +670,7 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
 <section class="contact" id="contact" style="border-bottom:0">
   <div class="wrap">
     <p class="mono">0x50 &nbsp;/&nbsp; Contact</p>
-    <h2 style="margin-top:14px">Email is the fastest way to reach me.</h2>
+    <h2 style="margin-top:14px">Email is the fastest way to reach Aaron.</h2>
     <p>For product marketing roles and engagements, write to aaron@barthcap.io.</p>
     <div class="cta">
       <a class="btn primary" href="mailto:aaron@barthcap.io">aaron@barthcap.io</a>
