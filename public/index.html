@@ -128,25 +128,26 @@ p{margin:0}
 .btn.sm{height:34px;padding:0 12px;font-size:13px}
 
 /* Hero */
-.hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 85%);mask-image:linear-gradient(180deg,#000 0%,transparent 85%);pointer-events:none}
-.hero::after{content:"";position:absolute;width:720px;height:720px;right:-240px;top:-320px;background:radial-gradient(closest-side,rgba(91,157,255,.16),transparent);pointer-events:none}
-.hero .wrap{position:relative;z-index:1;display:grid;gap:48px;padding-top:64px;padding-bottom:72px}
-@media (min-width:980px){.hero .wrap{grid-template-columns:1.25fr 1fr;align-items:center;gap:64px;padding-top:112px;padding-bottom:120px}}
-.hero h1{font-size:clamp(40px,7.2vw,76px);margin:20px 0 24px}
-.hero h1 span{display:block;margin-top:.45em;font-size:.46em;line-height:1.2;letter-spacing:-.015em;color:var(--muted);max-width:18em}
-.lead{font-size:18px;color:var(--muted);max-width:560px}
-.lead strong{color:var(--text);font-weight:500}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-
-.ledger{border:1px solid var(--line-2);border-radius:12px;background:rgba(14,15,18,.86);overflow:hidden}
-.ledger-head{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
-.ledger-row{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:center;padding:16px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s}
-.ledger-row:hover{background:var(--surface-2)}
-.ledger-row .ix{font:500 12px var(--mono);color:var(--faint)}
-.ledger-row .nm{font-weight:600;font-size:16px}
-.ledger-row .sc{font-size:13px;color:var(--muted);margin-top:2px}
-.ledger-foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px}
+.hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent);pointer-events:none}
+.hero::after{content:"";position:absolute;width:1100px;height:700px;left:50%;top:-380px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(91,157,255,.20),transparent);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;padding-top:72px;padding-bottom:56px}
+@media (min-width:980px){.hero .wrap{padding-top:128px;padding-bottom:72px}}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 8px;border:1px solid var(--line-2);border-radius:999px;background:rgba(19,21,25,.7);font:500 13px var(--sans);color:var(--muted)}
+.pill img{width:18px;height:18px}
+.pill span{color:var(--faint)}
+.hero h1{font-size:clamp(44px,8vw,92px);letter-spacing:-.04em;line-height:1;margin:28px auto 0;max-width:12em}
+.hero .sub{font-size:clamp(20px,2.6vw,28px);line-height:1.3;letter-spacing:-.015em;color:var(--muted);font-weight:500;margin:20px auto 0;max-width:30em;text-wrap:balance}
+.lead{font-size:17px;color:var(--faint);max-width:620px;margin:20px auto 0;text-wrap:balance}
+.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:36px}
+.btn.lg{height:46px;padding:0 20px;font-size:15px}
+.logos{margin-top:88px}
+@media (min-width:980px){.logos{margin-top:112px}}
+.logos .mono{margin-bottom:22px}
+.logo-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:28px 64px}
+.logo-row a{display:block;opacity:.6;filter:grayscale(1) brightness(1.4);transition:opacity .2s,filter .2s}
+.logo-row a:hover{opacity:1;filter:none}
+.logo-row img{width:auto;display:block}
 
 /* Sections */
 section{padding:88px 0;border-bottom:1px solid var(--line)}
@@ -156,14 +157,6 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 .sec-head p{color:var(--muted);font-size:17px}
 
 /* Thesis strip */
-.thesis{padding:0;border-bottom:1px solid var(--line)}
-.thesis .wrap{display:grid;gap:0}
-@media (min-width:760px){.thesis .wrap{grid-template-columns:repeat(3,1fr)}}
-.thesis-item{padding:28px 0;border-bottom:1px solid var(--line)}
-.thesis-item:last-child{border-bottom:0}
-@media (min-width:760px){.thesis-item{padding:32px 28px;border-bottom:0;border-left:1px solid var(--line)}.thesis-item:first-child{border-left:0;padding-left:0}}
-.thesis-item .what{font-size:18px;font-weight:500;margin-top:8px}
-.thesis-item .from{color:var(--muted);font-size:14px;margin-top:4px}
 
 /* Services */
 .svc{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -286,51 +279,22 @@ a.card .t::after{content:" \2197";color:var(--faint);font-family:var(--mono);fon
 
 <div class="hero">
   <div class="wrap">
-    <div>
-      <p class="mono"><b>Barth Cap</b> &nbsp;/&nbsp; Aaron Leibowitz</p>
-      <h1>Web3 product marketing.<span>Narrative, positioning and 0 to 1 GTM, built for your buyer.</span></h1>
-      <p class="lead">Translating complex technical products into value buyers understand. Helping the market see the need, then making the product the obvious answer.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:aaron@barthcap.io">aaron@barthcap.io</a>
-        <a class="btn" href="#work">See the work</a>
+    <p class="pill"><img src="/img/dog.png" alt="" width="18" height="18">Barth Cap <span>/</span> Aaron Leibowitz</p>
+    <h1>Web3 product marketing.</h1>
+    <p class="sub">Narrative, positioning and 0 to 1 GTM, built for your buyer.</p>
+    <p class="lead">Translating complex technical products into value buyers understand. Helping the market see the need, then making the product the obvious answer.</p>
+    <div class="cta">
+      <a class="btn primary lg" href="mailto:aaron@barthcap.io">Email aaron@barthcap.io</a>
+      <a class="btn lg" href="#work">See the work</a>
+    </div>
+
+    <div class="logos">
+      <p class="mono">Selected engagements</p>
+      <div class="logo-row">
+        <a href="#aartoo" aria-label="Aartoo case study"><img src="/img/logo-aartoo.png" alt="Aartoo" style="height:30px"></a>
+        <a href="#fuzzland" aria-label="Fuzzland case study"><img src="/img/logo-fuzzland.svg" alt="Fuzzland" style="height:34px"></a>
+        <a href="#redefine" aria-label="Redefine case study"><img src="/img/logo-redefine.svg" alt="Redefine" style="height:104px;margin:-34px 0"></a>
       </div>
-    </div>
-
-    <aside class="ledger" aria-label="Barth Cap engagements">
-      <div class="ledger-head"><span class="mono">Engagements</span><span class="mono">3</span></div>
-      <a class="ledger-row" href="#aartoo">
-        <span class="ix">0x01</span>
-        <span><span class="nm">Aartoo</span><span class="sc" style="display:block">Product-market fit and demand in a new category: from fan rewards to a CRM for community teams.</span></span>
-      </a>
-      <a class="ledger-row" href="#fuzzland">
-        <span class="ix">0x02</span>
-        <span><span class="nm">Fuzzland</span><span class="sc" style="display:block">On-chain security, repositioned from a one-time check to an always-on requirement.</span></span>
-      </a>
-      <a class="ledger-row" href="#redefine">
-        <span class="ix">0x03</span>
-        <span><span class="nm">Redefine</span><span class="sc" style="display:block">One story for customers and investors, then partnerships with Safe and SwissBorg.</span></span>
-      </a>
-      <div class="ledger-foot"><span class="mono">Founder</span><span class="mono"><b>Aaron Leibowitz</b></span></div>
-    </aside>
-  </div>
-</div>
-
-<div class="thesis">
-  <div class="wrap">
-    <div class="thesis-item">
-      <p class="mono">Aartoo</p>
-      <p class="what">Community tooling</p>
-      <p class="from">From fan rewards to a CRM for community teams.</p>
-    </div>
-    <div class="thesis-item">
-      <p class="mono">Fuzzland</p>
-      <p class="what">On-chain penetration testing</p>
-      <p class="from">From a one-time check to 24/7 coverage every DeFi protocol needs.</p>
-    </div>
-    <div class="thesis-item">
-      <p class="mono">Redefine</p>
-      <p class="what">DeFi risk management</p>
-      <p class="from">From a security add-on to part of the treasury stack.</p>
     </div>
   </div>
 </div>
